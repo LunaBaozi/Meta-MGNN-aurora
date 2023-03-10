@@ -132,7 +132,7 @@ class MoleculeDataset(InMemoryDataset):
 
 
     def get(self, idx):
-        data = Data()
+        data = Data(**data.__dict__)
         for key in self.data.keys:
             item, slices = self.data[key], self.slices[key]
             s = list(repeat(slice(None), item.dim()))
