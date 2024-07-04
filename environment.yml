@@ -2,17 +2,13 @@ name: metamgnn2
 channels:
     - conda-forge
     - defaults
-    - nvidia
-    - pytorch
 dependencies:
     - python=3.6
-    - pytorch 1.4.0
-    - torchvision
-    - cudatoolkit=11.3
-    - torchaudio
-    - torch-geometric 
-    - torch-scatter 
-    - torch-sparse 
-    - scikit-learn 
-    - tqdm 
-    - rdkit
+    - pip:
+      - torch==1.4.0
+      - torch-geometric==1.6.1
+      - torch-scatter==2.0.4
+      - torch-sparse==0.6.1
+      - scikit-learn==0.23.2
+      - tqdm==4.50.0
+      - rdkit
